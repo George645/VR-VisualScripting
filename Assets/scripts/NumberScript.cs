@@ -1,9 +1,11 @@
 using UnityEngine;
 
-public class NumberScript : MonoBehaviour
+public class CharacterScript : MonoBehaviour
 {
-    NumberScript rightThing;
-    bool isNumber = true;
+    public CharacterScript rightThing;
+    public CharacterScript leftThing;
+    public bool isNumber = true;
+    [Range(0, 10)] public string character;
     void Start(){
         
     }
