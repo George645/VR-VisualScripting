@@ -1,7 +1,6 @@
 using UnityEngine;
 
-public class CharacterScript : MonoBehaviour
-{
+public class CharacterScript : MonoBehaviour{
     public CharacterScript rightThing;
     public CharacterScript leftThing;
     public bool isNumber = true;
@@ -11,8 +10,7 @@ public class CharacterScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update(){
         
     }
 }
