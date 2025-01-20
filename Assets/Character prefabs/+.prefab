@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2397840815139389900}
   - component: {fileID: 6396377043058504464}
   - component: {fileID: 7717518282996253235}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Horizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 8768981578281709613}
   - component: {fileID: 4447579362072115939}
   - component: {fileID: 7394221301962437759}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Vertical
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: -9083144355362052717}
   - component: {fileID: 8403987310817139790}
   - component: {fileID: 995348290392810844}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: +
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,9 +315,9 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5, y: 5, z: 20}
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Size: {x: 5, y: 3.0127182, z: 3.0361986}
+  m_Center: {x: 0, y: 1.0137165, z: -0.003786087}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7306731184364124170}
   - component: {fileID: 4102442426569990013}
   - component: {fileID: 7768284456464040533}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: stalk (sort of) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 3387052341437296302}
   - component: {fileID: 7647068690875942545}
   - component: {fileID: 8816543212478252461}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 2344667139354154981}
   - component: {fileID: 8392171231241862487}
   - component: {fileID: 286222512565297470}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: stalk (sort of)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,8 @@ GameObject:
   - component: {fileID: -7543149994475331594}
   - component: {fileID: -7616078609837168188}
   - component: {fileID: 2332261321922020069}
-  m_Layer: 0
+  - component: {fileID: 5759970816288560558}
+  m_Layer: 6
   m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,3 +409,24 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: bf2081a849c440c4696d9bced2b67f19, type: 2}
+--- !u!65 &5759970816288560558
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8605506857027784302}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 5.520132, z: 2.994164}
+  m_Center: {x: 0, y: 2.2600656, z: 0.0020582676}

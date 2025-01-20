@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5007641256310154151}
   - component: {fileID: 382790515025971670}
   - component: {fileID: 5761482852760886371}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,8 @@ GameObject:
   - component: {fileID: -2859870773813900257}
   - component: {fileID: -126171809400879881}
   - component: {fileID: -4523108916062792080}
-  m_Layer: 0
+  - component: {fileID: 7101518320473691900}
+  m_Layer: 6
   m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,6 +193,27 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: bf2081a849c440c4696d9bced2b67f19, type: 2}
+--- !u!65 &7101518320473691900
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6279012933579858071}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 5.520132, z: 2.994164}
+  m_Center: {x: 0, y: 2.2600656, z: 0.0020582676}
 --- !u!1 &7087474037468008433
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +226,7 @@ GameObject:
   - component: {fileID: 2869342368628316834}
   - component: {fileID: 4992421844353014063}
   - component: {fileID: 4713891344063286582}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,7 +334,7 @@ GameObject:
   - component: {fileID: 6496317278012482869}
   - component: {fileID: 3288883253875864913}
   - component: {fileID: 85736836913071916}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: stalk
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3218193998747736132}
   - component: {fileID: 6405058491052234987}
   - component: {fileID: 8834043101508305226}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: stalk (sort of)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,8 @@ GameObject:
   - component: {fileID: 5113290340841104043}
   - component: {fileID: -2752940991984403843}
   - component: {fileID: 3943071039130212679}
-  m_Layer: 0
+  - component: {fileID: -5954805632757375403}
+  m_Layer: 6
   m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,6 +194,27 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: bf2081a849c440c4696d9bced2b67f19, type: 2}
+--- !u!65 &-5954805632757375403
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617337787654160398}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 5.520132, z: 2.994164}
+  m_Center: {x: 0, y: 2.2600656, z: 0.0020582676}
 --- !u!1 &1904764526139385145
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +227,7 @@ GameObject:
   - component: {fileID: 2916522592289525123}
   - component: {fileID: 7156487793524380514}
   - component: {fileID: 2369805336295379311}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +335,7 @@ GameObject:
   - component: {fileID: 9113902720923433651}
   - component: {fileID: 5727480755827354455}
   - component: {fileID: 4797893819531439873}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -421,7 +443,7 @@ GameObject:
   - component: {fileID: 3018154284068445119}
   - component: {fileID: 524393754087275248}
   - component: {fileID: 8505831840123044195}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

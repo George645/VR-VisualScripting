@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4661228941205319091}
   - component: {fileID: 5602333638443405}
   - component: {fileID: 3640673170696166051}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: stalk (sort of) 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 8921807266699557775}
   - component: {fileID: 7897544450231953385}
   - component: {fileID: 6900359621673268400}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -228,7 +228,7 @@ GameObject:
   - component: {fileID: 9199009807798298947}
   - component: {fileID: 7972280833650056388}
   - component: {fileID: 6329244144053610827}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: stalk (sort of) 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 1914726217817784827}
   - component: {fileID: 1180197270320656291}
   - component: {fileID: 2272282067793881427}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -444,7 +444,8 @@ GameObject:
   - component: {fileID: 6559511239767053351}
   - component: {fileID: 2390458222089589782}
   - component: {fileID: 6525822054882561498}
-  m_Layer: 0
+  - component: {fileID: -6584032633840507172}
+  m_Layer: 6
   m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -518,6 +519,27 @@ MonoBehaviour:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
     - {fileID: 11400000, guid: bf2081a849c440c4696d9bced2b67f19, type: 2}
+--- !u!65 &-6584032633840507172
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4872466783440377382}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 5.520132, z: 2.994164}
+  m_Center: {x: 0, y: 2.2600656, z: 0.0020582676}
 --- !u!1 &7399968032062191329
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,7 +552,7 @@ GameObject:
   - component: {fileID: 6248668057174899060}
   - component: {fileID: 7759851376996887849}
   - component: {fileID: 2933676732794845642}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
