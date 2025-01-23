@@ -1,16 +1,15 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CharacterScript : MonoBehaviour{
-    public CharacterScript rightThing;
-    public CharacterScript leftThing;
+    public GameObject rightThing;
+    public GameObject leftThing;
     public bool isNumber = true;
     public string character;
-    void Start(){
-        
-    }
-
-    // Update is called once per frame
-    void Update(){
-        
+    public void DestroyThoseOnTheRight() {
+        if ((GameObject)Variables.Object(this).Get("rightthing") != null) {
+            ((GameObject)Variables.Object(this).Get("rightthing")).GetComponent<CharacterScript>().DestroyThoseOnTheRight();
+        }
+        Destroy(this.gameObject);
     }
 }

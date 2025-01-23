@@ -19,7 +19,8 @@ public class OperationsHub : MonoBehaviour{
             return (int)Variables.Object(input).Get("character");
         }
     }
-    public static void GetEntireNumberFromRight(GameObject input) {
+    public static int GetEntireNumberFromRight(GameObject input) {
+        return 123456;
         /*string returningNumber = Convert.ToString(input.character);
         if (input.rightThing != null && input.rightThing.isNumber) {
             returningNumber += Convert.ToString(GetEntireNumber(input.rightThing));
