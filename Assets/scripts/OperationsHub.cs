@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 using Unity.VisualScripting;
+using System.Diagnostics.CodeAnalysis;
+using UnityEditor;
 
 [IncludeInSettings(true)]
 public class OperationsHub : MonoBehaviour{
@@ -10,14 +12,50 @@ public class OperationsHub : MonoBehaviour{
         return firstInt + secondInt;
     }*/
     public static int GetEntireNumberFromLeft(GameObject input) {
-        GameObject leftThing = (GameObject)Variables.Object(input).Get("leftthing");
-        if (leftThing != null && (bool)Variables.Object(leftThing).Get("isnumber")) {
-            int returnInt = GetEntireNumberFromLeft(leftThing) + (int)Variables.Object(input).Get("character");
-            return returnInt;
+        GameObject objecta = (GameObject)Variables.Object(input).Get("leftThing");
+        string temporaryString = "";
+        int returningInt;
+        bool thing = true;
+        while (thing) {
+            try {
+                temporaryString = (string)Variables.Object(objecta).Get("character") + temporaryString;
+                objecta = (GameObject)Variables.Object(objecta).Get("leftThing");
+            }
+            catch {
+                Debug.Log(Variables.Object(objecta).Get<string>("character"));
+                temporaryString = (string)Variables.Object(objecta).Get("character");
+                Debug.Log("dfgh");
+                thing = false;
+            }
+        }
+        if (CountPlusses(temporaryString) >= 2) {
+            for (int i = 0; i < CountPlusses(temporaryString); i++) {
+                int locationOfTheFirstPlus = temporaryString.IndexOf('+');
+                int firstNumberToAdd = Convert.ToInt32(temporaryString[0..locationOfTheFirstPlus]);
+                Console.WriteLine(temporaryString);
+                try {
+                    int locationOfTheSecondPlus = temporaryString[(locationOfTheFirstPlus + 1)..].IndexOf('+') + locationOfTheFirstPlus + 1;
+                    int secondNumberToAdd = Convert.ToInt32(temporaryString[(locationOfTheFirstPlus+1)..locationOfTheSecondPlus]);
+                    temporaryString = Convert.ToString(firstNumberToAdd + secondNumberToAdd) + temporaryString[(locationOfTheSecondPlus + 1)..^0];
+                }
+                catch {
+                    int secondNumberToAdd = Convert.ToInt32(temporaryString[(locationOfTheFirstPlus + 1)..]);
+                    temporaryString = Convert.ToString(firstNumberToAdd + secondNumberToAdd);
+                }
+            }
+            returningInt = Convert.ToInt32(temporaryString);
+        }
+        else if(CountPlusses(temporaryString) == 1) {
+            returningInt = Convert.ToInt32(temporaryString[..temporaryString.IndexOf('+')]) + Convert.ToInt32(temporaryString[(temporaryString.IndexOf('+') + 1)..]);
         }
         else {
-            return (int)Variables.Object(input).Get("character");
+            Debug.Log("huasdg");
+            Debug.Log(temporaryString);
+            returningInt = Convert.ToInt32(temporaryString);
+            Debug.Log("hksdg");
         }
+        return returningInt;
+
     }
     public static int GetEntireNumberFromRight(GameObject input) {
         return 123456;
@@ -26,5 +64,14 @@ public class OperationsHub : MonoBehaviour{
             returningNumber += Convert.ToString(GetEntireNumber(input.rightThing));
             return Convert.ToInt32(returningNumber);
         }*/
+    }
+    private static int CountPlusses(string stringToCheck) {
+        int counter = 0;
+        foreach (char character in stringToCheck.ToCharArray()) {
+            if (character == '+') {
+                counter++;
+            }
+        }
+        return counter;
     }
 }
