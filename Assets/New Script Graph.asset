@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: New Script Graph
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[{"name":"list","value":{"$content":[null,null,null,null,null,null],"$type":"Unity.VisualScripting.AotList"},"typeHandle":{"Identification":"Unity.VisualScripting.AotList,
+      Unity.VisualScripting.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"specifyFallback":false,"kind":"Graph","defaultValues":{"name":{"$content":"list","$type":"System.String"}},"position":{"x":-494.0,"y":-129.0},"guid":"844647c9-1c8c-4281-98ac-ca89a1e1592c","$version":"A","$type":"Unity.VisualScripting.GetVariable"},{"chainable":false,"parameterNames":["obj"],"member":{"name":"Remove","parameterTypes":["System.Object"],"targetType":"Unity.VisualScripting.AotList","targetTypeName":"Unity.VisualScripting.AotList","$version":"A"},"defaultValues":{},"position":{"x":-32.0,"y":-118.0},"guid":"69122dad-dc19-43b5-92be-6ee273fe4d33","$version":"A","$type":"Unity.VisualScripting.InvokeMember"},{"chainable":false,"parameterNames":["value"],"member":{"name":"Remove","parameterTypes":["System.Object"],"targetType":"System.Collections.IList","targetTypeName":"System.Collections.IList","$version":"A"},"defaultValues":{},"position":{"x":-95.0,"y":86.0},"guid":"f676dd7f-86d5-4823-9078-5416bf2e22ea","$version":"A","$type":"Unity.VisualScripting.InvokeMember"},{"type":"System.Collections.Generic.List`1[[UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]","value":{"$content":[null,null,null,null],"$type":"System.Collections.Generic.List`1[[UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"defaultValues":{},"position":{"x":-745.0,"y":53.0},"guid":"e360c6e6-e983-4e7a-8660-70c578026767","$version":"A","$type":"Unity.VisualScripting.Literal","$id":"21"},{"defaultValues":{},"position":{"x":-418.0,"y":95.0},"guid":"a916ec7c-1180-40be-8c30-195e4d7e48ac","$version":"A","$type":"Unity.VisualScripting.RemoveListItem","$id":"24"},{"sourceUnit":{"$ref":"21"},"sourceKey":"output","destinationUnit":{"$ref":"24"},"destinationKey":"listInput","guid":"b6bedf5b-3405-403b-885a-accd8a43f1e3","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
