@@ -26,17 +26,20 @@ public class OperationsHub : MonoBehaviour{
                 thing = false;
             }
         }
+        Debug.Log(CountPlusses(temporaryString));
         if (CountPlusses(temporaryString) >= 2) {
-            for (int i = 0; i < CountPlusses(temporaryString); i++) {
+            for (int i = 0; i <= CountPlusses(temporaryString); i++) {
                 int locationOfTheFirstPlus = temporaryString.IndexOf('+');
-                Debug.Log("hello, how are you, oh yeah, that:" + temporaryString[0..locationOfTheFirstPlus]);
+                Debug.Log(temporaryString);
                 int firstNumberToAdd = Convert.ToInt32(temporaryString[0..locationOfTheFirstPlus]);
                 try {
+                    Debug.Log("hi");
                     int locationOfTheSecondPlus = temporaryString[(locationOfTheFirstPlus + 1)..].IndexOf('+') + locationOfTheFirstPlus + 1;
                     int secondNumberToAdd = Convert.ToInt32(temporaryString[(locationOfTheFirstPlus+1)..locationOfTheSecondPlus]);
                     temporaryString = Convert.ToString(firstNumberToAdd + secondNumberToAdd) + temporaryString[(locationOfTheSecondPlus + 1)..^0];
                 }
                 catch {
+                    Debug.Log("hi2");
                     int secondNumberToAdd = Convert.ToInt32(temporaryString[(locationOfTheFirstPlus + 1)..]);
                     returningInt = Convert.ToInt32(firstNumberToAdd) + Convert.ToInt32(secondNumberToAdd);
                 }
